@@ -3,18 +3,43 @@
 	&--gutters{
 		margin-right: -65px;
 	}
-
-	&--gutters-large {
-		margin-right: -100px;
-	}
 	
 	&--gutters > div{
 		padding-right: 65px;
 	}
-
+	&--gutters-large {
+			margin-right: -100px;
+		}
 	&--gutters-large > div{
 		padding-right: 100px;
 	}
+
+	&--gutters-small{
+		margin-right: -45px;
+	}
+
+	&--gutters-small > div{
+		padding-right: 45px;
+	}
+
+	/* Begin Equal Height Rules */
+
+	&--equal-height-at-medium{
+		@mixin atMedium{
+			/*background-color: red;*/
+			display: flex;
+			
+
+		}
+
+		& > div{
+			float: none;
+			display: flex;
+		}
+
+	}
+
+
 
 
 
@@ -52,5 +77,9 @@
 	
 	&__b-margin-until-medium{
 		margin-bottom: 1rem;
+	}
+
+	&--t-padding{
+		padding-top: 80px;
 	}
 }
