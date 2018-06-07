@@ -19,6 +19,10 @@ gulpik.task('watch',function(){
 		browserSynk.reload();
 	});
 
+	watch('./app/assets/scripts/**/*.js',function(){
+		gulpik.start('scriptsRefresh');
+	})
+
 	watch('./app/assets/styles/**/*.css',function(){
 		gulpik.start('cssInject');
 	});
@@ -30,4 +34,8 @@ gulpik.task('watch',function(){
 gulpik.task('cssInject', ['css'], function(){
 	return gulpik.src('./app/temp/styles/style.css')
 		.pipe(browserSynk.stream());
+})
+
+gulpik.task('scriptsRefresh',['scripts'],function(){
+	browserSynk.reload();
 })
