@@ -45,6 +45,10 @@
 		@mixin atMedium{
 			padding: 12px 0px;
 			background-color: transparent;
+
+			&.is-current-link{
+				color: #fabb69;
+			}
 		}
 	}
 }
