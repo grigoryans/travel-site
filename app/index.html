@@ -4,10 +4,12 @@
  
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
   <title>Clear View Escapes</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
+  
+  <script src="temp/scripts/Vendor.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -122,7 +124,7 @@
     </div> <!-- wrapper -->
   </div> <!-- page-section (blue) -->
 
-  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-medium" data-matching-link="#testimonials-link">
+  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-medium lazyloaded" data-matching-link="#testimonials-link">
     <div class="wrapper wrapper--no-padding-until-medium">
       
       <h2 class="section-title section-title--blue"> <img class="section-title__icon" src="assets/images/icons/comment.svg"> Real <strong> Testimonials</strong></h2>
@@ -132,7 +134,7 @@
         <div class="row__medium-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img src="assets/images/testimonial-jane.jpg">
+              <img class="lazyload" src="assets/images/testimonial-jane.jpg">
             </div>
             <h3 class="testimonial__title">Jane Doe</h3>
             <h4 class="testimonial__subtitle">9 Time Escaper</h4>
@@ -172,6 +174,6 @@
     </div>
   </footer>
 
-  <script src="temp/scripts/App-compiles.js"></script>
+  <script src="temp/scripts/App.js"></script>
 </body>
 </html>
